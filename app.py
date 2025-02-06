@@ -16,7 +16,7 @@ if uploaded_file is not None:
     # Leer la imagen y mostrarla
     image = Image.open(uploaded_file).convert('L') # Convertir RGB a ByN
     image = image.resize((28, 28))
-    image_array = np.array(imge) / 255.0 # Normalizar
+    image_array = np.array(image) / 255.0 # Normalizar
     # El primer 1 indica que sólo hay una imagen, luego las dimensiones
     # y el último 1 indica que sólo hay una canal de color
     img_array=img_array.reshape(1,28,28,1)
