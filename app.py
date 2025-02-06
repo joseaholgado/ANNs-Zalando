@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 # Cargar el modelo
-model= load_model('fashion_mnist.keras')
+model= load_model('fashion_mnist.keras.pkl')
 
 # Crear la interface de usuario
 st.title("Clasificador de Fashion MNIST")
